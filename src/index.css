@@ -1,0 +1,11 @@
+body, #root {
+  margin: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background: #161E2D;
+}
+/*
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
