@@ -1,7 +1,7 @@
 .hero {
     width: 100%;
     height: 100vh;
-    background-color: #161E2D;
+    background-color: #000000;
     /* background-image: url("/src/assets/img/hero-bg.png"); */
     background-size:cover;
     background-position: center;
@@ -13,14 +13,13 @@
     justify-content: center;
     padding: 60px;
     
-    /* background: rgb(22,30,45);
-    background: linear-gradient(-60deg, rgba(22,30,45,1) 16%, rgba(51,0,102,1) 50%, rgba(22,30,45,1) 84%); */
+    background: rgb(22,30,45);
+    background: linear-gradient(-60deg, rgba(22,30,45,1) 16%, rgba(51,0,102,1) 50%, rgba(22,30,45,1) 84%);
   }
 
 h1 {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-style: normal;
     font-size: 64px;
     margin-top: 20px;
     background: linear-gradient(#F1F3F3, #7C5AED);
@@ -40,7 +39,7 @@ h1 {
 
 .hero-content {
   text-align: center;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .clouds-container {
