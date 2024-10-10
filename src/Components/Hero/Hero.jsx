@@ -58,7 +58,7 @@ function Hero() {
       {/* <Row>
         <Col className="hero-img-container d-flex justify-content-end align-items-end">
           <Parallax scale={1.5}>
-            <img src={Chennai} alt="" className="hero-img" />
+            <img src={} alt="" className="hero-img" />
           </Parallax>
         </Col>
       </Row> */}

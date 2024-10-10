@@ -9,7 +9,7 @@ function SocailLinks() {
         <Container>
             <Row className='social-row'>
                 
-                    <NavLink to="https://www.linkedin.com/company/awsccp-chennai" target='_blank'>
+                    <NavLink to="https://www.linkedin.com/company/aws-cloud-club-mjcet/" target='_blank'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
                             <defs>
                                 <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -22,7 +22,7 @@ function SocailLinks() {
                     </NavLink>
                 
             
-                    <NavLink to = "https://github.com/AWSCCPanimalarChennai" target='_blank'>
+                    <NavLink to = "" target='_blank'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
                             <defs>
                                 <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -34,7 +34,7 @@ function SocailLinks() {
                         </svg>
                     </NavLink>
                 
-                    <NavLink to= "https://chat.whatsapp.com/JLQEk3mpP652tcpuD7r6sB" target='_blank'>
+                    <NavLink to= "" target='_blank'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
                             <defs>
                                 <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">

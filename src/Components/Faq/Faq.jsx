@@ -26,20 +26,20 @@ function Faq() {
             <Col lg={12}>
                 <AccordionItem
                     eventKey="0"
-                    question="1. How can I join AWS Cloud Club Panimalar - Chennai?"
+                    question="1. How can I join AWS Cloud Club MJCET?"
                     answer= "To join our club, simply follow these three steps: Join our Announcement Group on WhatsApp to stay informed. Join our Meetup.com group to become an official member. Follow us on social media to stay connected."
                 />
 
                 <AccordionItem
                     eventKey="1"
                     question="2. I encountered a social registration error on Meetup.com. What steps should I take to resolve it?"
-                    answer= "While it's showing a social registration error, just re-select the location to CHENNAI-IN from CHENNAI-IN again. This should resolve the issue"
+                    answer= "While it's showing a social registration error, just re-select the location to HYDERABAD-IN from HYDERABAD-IN again. This should resolve the issue"
                 />
 
                 <AccordionItem
                     eventKey="2"
                     question="3. Are there any membership fees to join the club?"
-                    answer= "No, membership to AWS Cloud Club Panimalar - Chennai is completely free of charge. We believe in fostering a community of learning and collaboration without any financial barriers."
+                    answer= "No, membership to AWS Cloud Club MJCET is completely free of charge. We believe in fostering a community of learning and collaboration without any financial barriers."
                 />
                 
                 <AccordionItem
