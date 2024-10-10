@@ -43,9 +43,13 @@ function About() {
         <Col lg={6} className="section-content">
             <h2 className='side-head'>Who we are?</h2>
             <p className='para'>
-  The <b>AWS Cloud Club MJCET</b> is a dynamic Student Community dedicated to fostering innovation and expertise in cloud computing technologies, particularly focusing on Amazon Web Services (AWS). Established by a group of passionate students, driven by AWS and supported by faculty mentors, the club serves as a platform for students to explore, learn, and collaborate on cloud-related projects and initiatives.
-</p>
-
+              The <b>AWS Cloud Club Panimalar - Chennai</b> is a dynamic Student 
+              Community dedicated to fostering innovation and expertise in cloud computing 
+              technologies, particularly focusing on Amazon Web Services (AWS). Established 
+              by a group of passionate students, driven by AWS and supported by faculty mentors,
+              the club serves as a platform for students to explore, learn, and collaborate on 
+              cloud-related projects and initiatives.
+            </p>
             <h2 className='side-head'>What we do?</h2>
             <p className='para'>
   The mission of the AWS Cloud Club is to empower students with practical skills in cloud computing through <b>workshops, training sessions, and real-world projects</b>. By leveraging AWS resources, the club prepares members for the evolving tech industry and equips them for career success.

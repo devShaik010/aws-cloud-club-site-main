@@ -53,7 +53,7 @@ function EventsSection() {
             </Col>
             <Col lg={7} className='event-desc'>
               <h1 className='event-title'>Meetup-4 (Aug 2024)</h1>
-              <p className='para'>Join us for the Fourth MeetUp of AWS Cloud Club Panimalar - Chennai on August 31, 2024, from 5:30 PM to 7:30 PM IST, conducted online. Our session will be led by Amit Arora, who will provide a comprehensive introduction to AWS Cloud, explore the exciting realm of Generative AI within the AWS ecosystem, and delve into essential security practices on the cloud. This is a great opportunity to enhance your knowledge and connect with like-minded individuals passionate about cloud technologies.</p>
+              <p className='para'>Join us for the Fourth MeetUp of AWS Cloud Club MJCET on August 31, 2024, from 5:30 PM to 7:30 PM IST, conducted online. Our session will be led by Amit Arora, who will provide a comprehensive introduction to AWS Cloud, explore the exciting realm of Generative AI within the AWS ecosystem, and delve into essential security practices on the cloud. This is a great opportunity to enhance your knowledge and connect with like-minded individuals passionate about cloud technologies.</p>
                 
               <DetailsCard 
               speaker="Mr. Amit Arora" 
