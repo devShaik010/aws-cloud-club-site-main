@@ -6,14 +6,22 @@ import inauguration1 from '../../assets/img/events/inauguration1.jpg';
 import inauguration2 from '../../assets/img/events/inauguration2.jpg';
 import inauguration3 from '../../assets/img/events/inauguration4.jpg';
 
+// photos and memories
+import hero from '../../assets/img/events/team.jpg'
+import r from '../../assets/img/events/r.jpeg'
+import r1 from '../../assets/img/events/r1.jpeg'
+import r2 from '../../assets/img/events/r3.jpeg'
+import r3 from '../../assets/img/events/r4.jpeg'
+import r4 from '../../assets/img/events/r5.jpeg'
+import r5 from '../../assets/img/events/r6.jpeg'
+import r6 from '../../assets/img/events/r7.jpeg'
+
 function GallerySection() {
   const [showModal, setShowModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
 
   const images = [
-    inauguration1,
-    inauguration2,
-    inauguration3,
+    r4,r5,r6,hero,r,r1,r2,r3,
   ];
 
   const handleImageClick = (image) => {

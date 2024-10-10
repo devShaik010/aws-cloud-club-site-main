@@ -11,7 +11,8 @@ import GradientBoxIcon from "../GradientBoxIcon/GradientBoxIcon";
 import SocialLinks from "../SocialLinks/SocailLinks";
 
 import Lighthouse from "../../assets/img/hyderabad.png";
-import nammaChennai from "../../assets/img/nammaChennai.png";
+// import nammaChennai from "../../assets/img/nammaChennai.png";
+import sticker from '../../assets/img/events/sticker.jpg'
 
 function Footer() {
   return (
@@ -89,7 +90,7 @@ function Footer() {
             style={{ position: "absolute", left: 30, bottom: 0 }}
             className="chennai-identity"
           >
-            <img src={nammaChennai} alt="Namma Chennai" width={200} />
+            <img src={sticker} alt="Namma Chennai"  width={200} />
 
             <img src={Lighthouse} alt="Light house" width={200} />
           </div>
