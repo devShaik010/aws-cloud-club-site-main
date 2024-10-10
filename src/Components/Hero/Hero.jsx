@@ -10,7 +10,6 @@ import { Parallax } from 'react-scroll-parallax';
 import cloud from '../../assets/img/cloud.png';
 import cloud1 from '../../assets/img/cloud1.png';
 
-import Chennai from '../../assets/img/chennai.png';
 
 function Hero() {
   const [scrollOffset, setScrollOffset] = useState(0);
@@ -46,7 +45,7 @@ function Hero() {
 
       <Row className="hero-row">
         <Col lg={12} className="hero-content">
-          <h1>AWS Cloud Club Panimalar - Chennai.</h1>
+          <h1>AWS Cloud Club MJCET</h1>
           <h4>A Technical Community of AWS for Students, By Students.</h4>
           {/* <Button className='hero-btn' onClick={scrollToAbout}>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-arrow-down" viewBox="0 0 16 16">
@@ -56,11 +55,11 @@ function Hero() {
         </Col>
       </Row>
       <Row>
-        <Col className="hero-img-container d-flex justify-content-end align-items-end">
+        {/* <Col className="hero-img-container d-flex justify-content-end align-items-end">
           <Parallax scale={1.5}>
-            <img src={Chennai} alt="" className="hero-img" />
+            <img src={} alt="" className="hero-img" />
           </Parallax>
-        </Col>
+        </Col> */}
       </Row>
     </Container>
   );

@@ -16,7 +16,7 @@ function IntroSection() {
             
             <h1>AWS Cloud Club</h1>
             <p className='para'>
-            The goal of <b>AWS Cloud Club Panimalar - Chennai</b> is to teach students about the AWS Cloud
+            The goal of <b>AWS Cloud Club MJCET - Hyderabad</b> is to teach students about the AWS Cloud
              and its various use cases, including those related to security, AI, business analytics, business
               transformation, etc. We will teach students about the benefits of the cloud and how it 
               accelerates business. <br /><br />Furthermore, the AWS Cloud Club will give students hands-on experience 
