@@ -10,7 +10,7 @@ function BlurCard(props) {
     // <Parallax translateX={[-200, 200]} tagOuter="figure" className="blur-card">
     <div className="blur-card">
       <Card.Body className='card-body'>
-        <Parallax scale={[1.2, 0.8]} >
+        <Parallax scale={[1.0, 0.8]} >
           <img src={props.image} alt={props.title} id="card-image"/>
         </Parallax> 
         <Card.Title className='card-title'>{props.title}</Card.Title>

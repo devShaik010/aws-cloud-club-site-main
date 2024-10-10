@@ -1,53 +1,83 @@
 .blur-card {
-    background-color: rgba(255, 255, 255, 0.12);
+    background-color: rgba(255, 255, 255, 0.1); /* Softer background color */
     border: none;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    padding: 10px 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Add box-shadow for elevation */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
     display: flex;
+    flex-direction: column; /* Stack content vertically */
     justify-content: center;
     align-items: center;
     z-index: 99;
     width: 100%;
-    min-height: 350px;
+    min-height: 400px; /* Height remains unchanged */
+    border-radius: 12px; /* Rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s,background-color 0.3s; /* Smooth transitions */
+    position: relative; /* Position for the border effect */
 }
 
+.blur-card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+    background-color: rgba(255, 255, 255, 0.855);
+}
 
+.blur-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 12px; /* Match the card's border radius */
+    border: 2px solid transparent; /* Initial border */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+    z-index: -1; /* Behind the card */
+}
 
-.card-title{
-    font-size: 32px;
-    font-weight: 600;
-    font-style: normal;
-    background: linear-gradient(#F1F3F3, #7C5AED);
+.blur-card:hover::before {
+    border-color: rgba(0, 123, 255, 0.8); /* New border color on hover */
+}
+
+.card-title {
+    font-size: 34px; /* Adjusted font size */
+    font-weight: 700; /* Bolder font weight */
+    background: linear-gradient(90deg, #0d6efd, #6f42c1); /* Professional gradient colors */
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-family: "Raleway", sans-serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow for better readability */
 }
-  
-.card-text{
-    color: #fff;
+
+.card-text {
+    color: #ffffff; /* Slightly brighter text */
     text-align: justify;
-    font-size: 16px;
+    font-size: 16px; /* Slightly reduced font size for readability */
     font-weight: 400;
     font-family: "Raleway", sans-serif;
+    line-height: 1.5; /* Improved line height */
 }
 
-
-#card-image{
-    height: 180px;
+#card-image {
+    height: 150px; /* Reduced image height */
     width: auto;
-    margin-bottom: 15px;
-    border: none;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Rounded corners for the image */
+    transition: transform 0.3s; /* Smooth image transition */
 }
 
+#card-image:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
 
-.card-body{
+.card-body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 10px; /* Added padding */
 }

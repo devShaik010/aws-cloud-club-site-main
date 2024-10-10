@@ -1,77 +1,58 @@
-import React, { useState, useEffect } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import ImageGallery from "react-image-gallery";
-
-import "./GallerySection.css";
-import SectionHeader from '../SectionHeader/SectionHeader';
+import React, { useState } from 'react';
+import { Container, Row, Col, Modal, Button } from 'react-bootstrap';
+import './GallerySection.css';
 
 import inauguration1 from '../../assets/img/events/inauguration1.jpg';
 import inauguration2 from '../../assets/img/events/inauguration2.jpg';
 import inauguration3 from '../../assets/img/events/inauguration4.jpg';
 
 function GallerySection() {
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const position = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
-      setScrollPosition(position);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  const [showModal, setShowModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState('');
 
   const images = [
-    {
-      original: inauguration1,
-      thumbnail: inauguration1,
-    },
-    {
-      original: inauguration2,
-      thumbnail: inauguration2,
-    },
-    {
-      original: inauguration3,
-      thumbnail: inauguration3,
-    },
+    inauguration1,
+    inauguration2,
+    inauguration3,
   ];
 
-  const [isMobile, setIsMobile] = useState(false);
+  const handleImageClick = (image) => {
+    setSelectedImage(image);
+    setShowModal(true);
+  };
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    handleResize();
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  const thumbnailPosition = isMobile ? "bottom" : "right";
+  const handleClose = () => {
+    setShowModal(false);
+  };
 
   return (
     <Container className='gallery-section'>
-      <SectionHeader header="Moments"  scrollPosition={scrollPosition} />
+      <h2 className='gallery-tag'>Moments📸</h2>
       <Row className='row-gallery'>
-        <Col lg={12}>
-        <ImageGallery
-          items={images}
-          showNav={false}
-          thumbnailPosition={thumbnailPosition}
-          showIndex={true}
-          autoPlay={true}
-          showPlayButton={false}
-          showFullscreenButton={false}
-        />
-        </Col>
+        {images.map((image, index) => (
+          <Col xs={12} sm={6} md={4} key={index} className='image-container'>
+            <img
+              src={image}
+              alt={`Gallery Image ${index + 1}`}
+              onClick={() => handleImageClick(image)}
+            />
+          </Col>
+        ))}
       </Row>
+
+      <Modal
+        show={showModal}
+        onHide={handleClose}
+        dialogClassName="modal-90w"
+        aria-labelledby="example-custom-modal-styling-title"
+        centered
+        fullscreen
+      >
+        <Modal.Body className="modal-body">
+          <button className="close-button" onClick={handleClose}>✖</button>
+          <img src={selectedImage} alt="Selected" className="fullscreen-image" />
+        </Modal.Body>
+      </Modal>
     </Container>
   );
 }
