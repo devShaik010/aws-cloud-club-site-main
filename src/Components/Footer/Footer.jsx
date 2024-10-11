@@ -90,7 +90,7 @@ function Footer() {
             style={{ position: "absolute", left: 30, bottom: 0 }}
             className="chennai-identity"
           >
-            <img src={sticker} alt="Namma Chennai"  width={200} />
+            <img src={sticker} alt="Hyd text"  width={200} />
 
             <img src={Lighthouse} alt="Light house" width={200} />
           </div>
@@ -108,7 +108,7 @@ function Footer() {
               </NavLink>
               <br />
               <NavLink
-                to="https://chat.whatsapp.com/Cfpykio9KWW7RXNSsO1saT"
+                to="https://chat.whatsapp.com/BCka3JX7BML77LpIovbVAc"
                 target="_blank"
                 className="useful-links"
               >
@@ -117,7 +117,7 @@ function Footer() {
               </NavLink>{" "}
               <br />
               <NavLink
-                to="https://chat.whatsapp.com/Jk2FRnT1M9j2QHdWa9HhJX"
+                to="https://chat.whatsapp.com/BCka3JX7BML77LpIovbVAc"
                 target="_blank"
                 className="useful-links"
               >
@@ -132,7 +132,7 @@ function Footer() {
                 Contribute
               </h5>
               <NavLink
-                to="mailto:awscc_panimalar_chennai@outlook.com?subject=Intrest%20to%20Present%20a%20topic%20-%20Reg"
+                to="mailto:awscc.mjcet@gmail.com?subject=Intrest%20to%20Present%20a%20topic%20-%20Reg"
                 target="_blank"
                 className="useful-links"
               >
@@ -141,7 +141,7 @@ function Footer() {
               </NavLink>{" "}
               <br />
               <NavLink
-                to="mailto:awscc_panimalar_chennai@outlook.com?subject=Intrest%20to%20Host%20an%20Event%20-%20Reg"
+                to="mailto:awscc.mjcet@gmail.com?subject=Intrest%20to%20Host%20an%20Event%20-%20Reg"
                 target="_blank"
                 className="useful-links"
               >
@@ -150,7 +150,7 @@ function Footer() {
               </NavLink>{" "}
               <br />
               <NavLink
-                to="mailto:awscc_panimalar_chennai@outlook.com?subject=Intrest%20to%20Sponsor%20an%20Event%20-%20Reg"
+                to="mailto:awscc.mjcet@gmail.com?subject=Intrest%20to%20Sponsor%20an%20Event%20-%20Reg"
                 target="_blank"
                 className="useful-links"
               >

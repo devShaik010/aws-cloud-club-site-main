@@ -43,7 +43,7 @@ function About() {
         <Col lg={6} className="section-content">
             <h2 className='side-head'>Who we are?</h2>
             <p className='para'>
-              The <b>AWS Cloud Club Panimalar - Chennai</b> is a dynamic Student 
+              The <b>AWS Cloud Club MJCET - Hyderabad</b> is a dynamic Student 
               Community dedicated to fostering innovation and expertise in cloud computing 
               technologies, particularly focusing on Amazon Web Services (AWS). Established 
               by a group of passionate students, driven by AWS and supported by faculty mentors,
