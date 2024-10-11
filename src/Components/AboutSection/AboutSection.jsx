@@ -1,15 +1,3 @@
-//------------------------------------------------------------------------------
-
-/**
- * AboutSection.jsx
- * Description: Component for rendering about section in About Route.
- * Author: Jeswin Joseph J
- * Created: March 2024
- * License: MIT
- */
-
-//------------------------------------------------------------------------------
-
 
 import React, { useEffect, useState } from 'react';
 import "./AboutSection.css";

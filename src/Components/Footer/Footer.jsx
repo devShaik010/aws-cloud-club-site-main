@@ -11,8 +11,7 @@ import GradientBoxIcon from "../GradientBoxIcon/GradientBoxIcon";
 import SocialLinks from "../SocialLinks/SocailLinks";
 
 import Lighthouse from "../../assets/img/hyderabad.png";
-// import nammaChennai from "../../assets/img/nammaChennai.png";
-import sticker from '../../assets/img/events/sticker.jpg'
+import sticker from '../../assets/img/events/sticker.png'
 
 function Footer() {
   return (
