@@ -2,10 +2,6 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Modal, Button } from 'react-bootstrap';
 import './GallerySection.css';
 
-import inauguration1 from '../../assets/img/events/inauguration1.jpg';
-import inauguration2 from '../../assets/img/events/inauguration2.jpg';
-import inauguration3 from '../../assets/img/events/inauguration4.jpg';
-
 // photos and memories
 import hero from '../../assets/img/events/team.jpg'
 import r from '../../assets/img/events/r.jpeg'

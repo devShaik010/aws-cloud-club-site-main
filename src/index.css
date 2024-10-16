@@ -3,7 +3,9 @@ body, #root {
   scroll-behavior: smooth;
   overflow-x: hidden;
   background: #161E2D;
+  /* cursor: url('.././src/assets/img/cr.jpg'), auto; Use the custom JPG cursor */
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

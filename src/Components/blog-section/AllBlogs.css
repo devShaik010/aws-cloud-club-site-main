@@ -1,0 +1,43 @@
+.container {
+  color: white;
+}
+
+.card {
+  border: 2px solid #4b0082; /* Purple border */
+}
+
+.card-title {
+  color: #4b0082; /* Purple color for card titles */
+}
+
+.card-text {
+  color: #333;
+}
+
+.other-blogs {
+  margin-top: 20px;
+}
+
+.blog-title {
+  font-size: 1.25rem;
+  color: #007bff; /* Blue color for blog titles */
+  cursor: pointer;
+}
+
+.blog-title:hover {
+  text-decoration: underline;
+}
+
+.blog-summary {
+  color: #666;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  .card {
+      margin-bottom: 1rem; /* Adjust margin for mobile */
+  }
+}
+.other-blogs{
+  color: white;
+}
