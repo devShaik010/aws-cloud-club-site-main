@@ -1,0 +1,148 @@
+.container {
+  color: white;
+}
+
+.card {
+  border: 2px solid #4b0082;
+  border-radius: 15px;
+  transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  min-height: 250px;
+  max-width: 300px;
+  padding: 15px;
+  cursor: pointer;
+  margin: auto;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.card:hover {
+  border-color: #007bff;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5);
+}
+
+.card-title {
+  color: #4b0082;
+  font-size: 1.25rem;
+}
+
+.card-text {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.other-blogs {
+  margin-top: 40px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.other-blogs h4 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #4b0082;
+  padding-bottom: 10px;
+}
+
+.blog-entry {
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #4b0082;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.blog-entry:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.blog-title {
+  font-size: 1.25rem;
+  color: #007bff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.blog-title:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.blog-summary {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.85rem;
+  }
+
+  .blog-title {
+    font-size: 1.1rem;
+  }
+
+  .blog-summary {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 10px 20px;
+}
+
+.nav-button {
+  background-color: #4b0082;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #FF9900;
+  transform: translateY(-2px);
+}
+
+.prev {
+  margin-right: auto; /* Align to left */
+}
+
+.next {
+  margin-left: auto; /* Align to right */
+}
+
+@media (max-width: 768px) {
+  .nav-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
