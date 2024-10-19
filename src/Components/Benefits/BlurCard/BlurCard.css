@@ -1,26 +1,20 @@
 .blur-card {
-    background-color: rgba(255, 255, 255, 0.1); /* Softer background color */
-    border: none;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    padding: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
-    justify-content: center;
-    align-items: center;
-    z-index: 99;
-    width: 100%;
-    min-height: 400px; /* Height remains unchanged */
-    border-radius: 12px; /* Rounded corners */
-    transition: transform 0.3s, box-shadow 0.3s,background-color 0.3s; /* Smooth transitions */
-    position: relative; /* Position for the border effect */
+    width: 200px;
+    height: 250px;
+    background: linear-gradient(to bottom, #b95287ad, #808080b0);
+    background-color: black;
+    color: white;
+    border-radius: 36px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    margin: 3rem; /* Combined margin properties */
 }
 
 .blur-card:hover {
-    transform: translateY(-5px); /* Slight lift effect on hover */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
-    background-color: rgba(255, 255, 255, 0.855);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .blur-card::before {
@@ -30,48 +24,38 @@
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 12px; /* Match the card's border radius */
-    border: 2px solid transparent; /* Initial border */
-    transition: border-color 0.3s; /* Smooth transition for border color */
-    z-index: -1; /* Behind the card */
-}
-
-.blur-card:hover::before {
-    border-color: rgba(0, 123, 255, 0.8); /* New border color on hover */
+    border-radius: 12px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+    z-index: -1;
 }
 
 .card-title {
-    font-size: 34px; /* Adjusted font size */
-    font-weight: 700; /* Bolder font weight */
-    background: linear-gradient(90deg, #0d6efd, #6f42c1); /* Professional gradient colors */
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 15px;
-    font-family: "Raleway", sans-serif;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow for better readability */
+    color: white;   
 }
 
 .card-text {
-    color: #ffffff; /* Slightly brighter text */
+    color: #ffffff;
     text-align: justify;
-    font-size: 16px; /* Slightly reduced font size for readability */
+    font-size: 16px;
     font-weight: 400;
     font-family: "Raleway", sans-serif;
-    line-height: 1.5; /* Improved line height */
+    line-height: 1.5;
 }
 
 #card-image {
-    height: 150px; /* Reduced image height */
+    height: 150px;
     width: auto;
     margin-bottom: 20px;
-    border-radius: 8px; /* Rounded corners for the image */
-    transition: transform 0.3s; /* Smooth image transition */
+    border-radius: 8px;
+    transition: transform 0.3s;
 }
 
 #card-image:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    transform: scale(1.05);
 }
 
 .card-body {
@@ -79,5 +63,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px; /* Added padding */
+    padding: 10px;
+    gap: 4px;
+}
+
+/* Media query for smartphones */
+@media (max-width: 576px) {
+    .blur-card {
+        margin: 10px;
+        width: 300px; /* Adjusted width for smaller screens */
+        height: 250px; /* Maintain height for consistency */
+    }
 }

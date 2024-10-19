@@ -17,14 +17,18 @@ function IntroSection() {
             <b> AWS Cloud Club</b>
           </h1>
           <p class="para">
-            The <b>AWS Cloud Club at MJCET</b> empowers students with AWS Cloud
-            knowledge across various use cases like security, AI, and business
-            analytics. We emphasize the advantages of cloud technology for
-            business growth. <br />
-            <br />
-            Members gain hands-on experience through projects, developing
-            essential <b>technical</b> and <b>business expertise</b> that are in
-            high demand. 🚀💼
+            Join the <b>AWS Cloud Club at MJCET</b> to explore the power of AWS
+            Cloud! From security to AI and business analytics, we highlight how
+            cloud technology drives growth. Members gain hands-on experience
+            through projects, building valuable <b>technical</b> and{" "}
+            <b>business skills</b> in high demand. 🚀💼
+          </p>
+          <p class="para">
+            Connect with industry experts and peers through workshops and
+            seminars. Explore cloud computing trends and enhance your skills
+            with the
+            <b>AWS Cloud Club</b>. Join us to elevate your knowledge and
+            network! 🌟
           </p>
         </Col>
         {/* <Col lg={6} style={{ display: "flex", alignItems: "Center", justifyContent: "center" }}>

@@ -2,7 +2,7 @@
   color: white;
 }
 
-.card {
+.card1 {
   border: 2px solid #4b0082;
   border-radius: 15px;
   transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
@@ -14,25 +14,25 @@
   margin: auto;
 }
 
-.card img {
+.card1 img {
   width: 100%;
   height: auto;
   max-height: 150px;
   object-fit: cover;
 }
 
-.card:hover {
+.card1:hover {
   border-color: #007bff;
   transform: translateY(-5px);
   box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5);
 }
 
-.card-title {
+.card1-title {
   color: #4b0082;
   font-size: 1.25rem;
 }
 
-.card-text {
+.card11-text {
   color: #555;
   font-size: 0.9rem;
 }
@@ -82,15 +82,15 @@
 }
 
 @media (max-width: 768px) {
-  .card {
+  .card1 {
     margin-bottom: 1.5rem;
   }
 
-  .card-title {
+  .card1-title {
     font-size: 1.2rem;
   }
 
-  .card-text {
+  .card1-text {
     font-size: 0.85rem;
   }
 
@@ -104,7 +104,7 @@
 }
 
 @media (max-width: 576px) {
-  .card {
+  .card1 {
     margin-bottom: 1rem;
   }
 }

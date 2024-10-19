@@ -1,20 +1,16 @@
-.cta-section{
-    background: rgb(22,30,45);
-    background: linear-gradient(60deg, rgba(22,30,45,1) 16%, rgba(51,0,102,1) 50%, rgba(22,30,45,1) 84%);
-    padding: 80px 60px 0 60px;
-    min-height: 100vh;
-    min-width: 100%;
-  }
+.cta-section {
+    min-height: 50vh;
+    width: 100%; /* Changed from min-width to width for clarity */
+}
 
 .cta {
     margin: 0 40px;
 }
 
 .join-btn {
-    background: rgb(51,0,102);
-    border: none;
-    border-radius: 3px;
-    background: linear-gradient(90deg, #3a0247, #410157);
+    background: rgba(255, 255, 255, 0.307);
+    border: 1px solid white;
+    border-radius: 10px;
     font-weight: 500;
     font-size: 16px;
     padding: 12px 36px;
@@ -22,28 +18,27 @@
     color: #ffffff;
 }
 
-
 .join-btn:hover {
     background: linear-gradient(#410157, #3a0247);
 }
 
-.btn-div{
+.btn-div {
     margin-top: 40px;
 }
 
 /* Media query for smartphones */
 @media (max-width: 576px) {
     .cta-section {
-        padding: 80px 5px 30px 5px;
+        padding: 80px 5px 30px 5px; /* Adjusted padding for smaller screens */
     }
 
     .cta {
-        margin: 0 10px;
+        margin: 0 10px; /* Reduced margin for smaller screens */
     }
-    .btn-div{
+
+    .btn-div {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center; /* Center buttons on small screens */
     }
-    
-  }
+}

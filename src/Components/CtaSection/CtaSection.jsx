@@ -26,10 +26,9 @@ function CtaSection() {
 
   return (
     <Container className="cta-section">
-      <SectionHeader header="Join Us" scrollPosition={scrollPosition} />
       <Row className="cta">
         <Col sm={12} className="cta-col">
-          <h1><b>We are Open!</b></h1>
+          <h1><b>Join US!</b></h1>
           <p className="para">
             The AWS Cloud Club at MJCET, Hyderabad, is a vibrant community of
             passionate learners in cloud technology. Join us to exchange ideas,

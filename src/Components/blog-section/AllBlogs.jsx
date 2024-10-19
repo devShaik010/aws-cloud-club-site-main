@@ -17,11 +17,11 @@
         <div className="row mb-4">
           {topBlogs.map((blog, index) => (
             <div className="col-md-4 mb-3" key={index}>
-              <div className="card" onClick={() => navigate(`/blog/${index}`)}>
-                <img src={blog.image} className="card-img-top" alt={blog.title} />
-                <div className="card-body">
-                  <h5 className="card-title">{blog.title}</h5>
-                  <p className="card-text">{blog.summary}</p>
+              <div className="card1" onClick={() => navigate(`/blog/${index}`)}>
+                <img src={blog.image} className="card1-img-top" alt={blog.title} />
+                <div className="card1-body">
+                  <h5 className="card1-title">{blog.title}</h5>
+                  <p className="card1-text">{blog.summary}</p>
                 </div>
               </div>
             </div>

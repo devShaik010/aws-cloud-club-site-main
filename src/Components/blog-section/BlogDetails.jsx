@@ -2,7 +2,8 @@ import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import './BlogDetails.css'
+import './BlogDetails.css';
+
 const BlogDetail = () => {
   const { id } = useParams();
   const [content, setContent] = useState('');
@@ -16,7 +17,7 @@ const BlogDetail = () => {
   }, [id]);
 
   return (
-    <div className="blog-container">
+    <div className="blog-detail">
       <h1 className="blog-title">Blog Title Here</h1>
       <div className="blog-content">
         <ReactMarkdown children={content} remarkPlugins={[remarkGfm]} />
