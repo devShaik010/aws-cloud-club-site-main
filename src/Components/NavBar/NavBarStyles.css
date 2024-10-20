@@ -1,3 +1,27 @@
+.join-now {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    background-color: #b95287; /* Background color */
+    color: #FFFFFF; /* Text color */
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.join-now:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+@media screen and (max-width: 1040px) {
+    .join-now {
+        display: none; /* Hide on mobile */
+    }
+}
+
+
 .navbar {
     font-family: "Montserrat", sans-serif; 
     position: fixed;

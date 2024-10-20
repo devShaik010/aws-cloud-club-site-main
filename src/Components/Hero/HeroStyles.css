@@ -1,3 +1,29 @@
+.badg {
+  background-color: rgba(0, 0, 0, 0.289);
+  backdrop-filter: blur(10px);
+  padding-right: 8px;
+  padding-left: 8px;
+  padding-top:5px ;
+  padding-bottom:5px ;
+  border-radius: 30px;
+  font-size: small;
+  text-align: center;
+  display: inline-flex; 
+  line-height: center;
+  margin-bottom: -10px;/* Ensure the badge fits its content */
+}
+
+.new {
+  background-color: rgb(216, 35, 216);
+  color: #000000;
+  border-radius: 30px;
+  padding: 4px;
+  font-weight: bolder;
+  margin-right: 10px;
+  font-size: x-small;
+  text-align: center;
+}
+
 h4 {
   font-family: monospace;
   font-weight: bolder;
@@ -80,14 +106,14 @@ h1 {
 
 .cloud-left {
   position: absolute;
-  top: 50px; 
-  right: -300px; 
+  top: 50px;
+  right: -300px;
   height: 700px;
 }
 
 .cloud-right {
   position: absolute;
-  left: -300px; 
+  left: -300px;
   top: 100px;
   height: 600px;
 }
@@ -113,63 +139,63 @@ h1 {
 }
 
 .hero-img {
-  width: 300px; 
-  height: auto; 
+  width: 300px;
+  height: auto;
 }
 
 /* Media query for smartphones */
 @media (max-width: 576px) {
   h1 {
-      font-size: 34px;
+    font-size: 34px;
   }
 
   .cloud-left {
-      left: 0;
+    left: 0;
   }
 
   .cloud-right {
-      width: 700px;
-      position: absolute;
-      top: 50px;
-      right: 10px;
+    width: 700px;
+    position: absolute;
+    top: 50px;
+    right: 10px;
   }
 
   .hero {
-      padding: 25px 10px;
+    padding: 25px 10px;
   }
 
   .hero-img {
-      width: 200px;
+    width: 200px;
   }
 
   .hero-btn {
-      display: none;
+    display: none;
   }
 }
 
 /* Media query for tablets */
 @media (max-width: 768px) and (min-width: 576px) {
   h1 {
-      font-size: 48px;
+    font-size: 48px;
   }
 
   .hero {
-      padding: 25px 10px;
+    padding: 25px 10px;
   }
 
   .hero-img {
-      width: 200px;
+    width: 200px;
   }
 
   .hero-btn {
-      display: none;
+    display: none;
   }
 }
 
 /* Responsive adjustment for .hero-h1 */
 @media (max-width: 576px) {
   .hero-h1 {
-      margin-top: -40%;
-      font-size: 3rem;
+    margin-top: -40%;
+    font-size: 3rem;
   }
 }

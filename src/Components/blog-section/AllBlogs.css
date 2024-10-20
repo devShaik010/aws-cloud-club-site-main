@@ -1,3 +1,11 @@
+.hrbox
+{
+   border-top: 1px solid white;
+   width: 100%;
+   text-align: center;
+   
+
+}
 .container {
   color: white;
 }

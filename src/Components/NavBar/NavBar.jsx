@@ -15,6 +15,7 @@ function NavBar() {
             
             <div className="navbar-menu-container">
                 <ul className={click ? "navbar-menu active" : "navbar-menu"}>
+                    {/* Menu Items */}
                     <li>
                         <NavLink to="/" className={({ isActive }) => (isActive ? "active-link" : "")} onClick={() => setClick(false)}>Home</NavLink>
                     </li>
@@ -35,6 +36,10 @@ function NavBar() {
                     </li>
                 </ul>
             </div>
+
+            <button className="join-now" onClick={() => alert('Join Now Clicked!')}>
+                Join Now
+            </button>
 
             <div className="hamburger" onClick={handleClick}>
                 {click ? (
