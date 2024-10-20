@@ -16,7 +16,6 @@ function About() {
             <NavBar />
             <AboutSection />
             <GlobalPresence />
-            <TeamSection />
             <Footer />
         </div>
     ) ;
