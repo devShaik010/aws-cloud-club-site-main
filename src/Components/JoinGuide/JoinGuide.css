@@ -1,6 +1,6 @@
 .join-guide{
-    background: rgb(22,30,45);
-    background: linear-gradient(-60deg, rgba(22,30,45,1) 16%, rgba(51,0,102,1) 50%, rgba(22,30,45,1) 84%);
+    /* background: rgb(22,30,45);
+    background: linear-gradient(-60deg, rgba(22,30,45,1) 16%, rgba(51,0,102,1) 50%, rgba(22,30,45,1) 84%); */
     min-height: 100vh;
     padding: 80px 60px;
     min-width: 100%;
@@ -23,7 +23,7 @@
     font-family: "Raleway", sans-serif; 
     font-weight: 600;
     font-style: normal;
-    background: linear-gradient(#F1F3F3, #7C5AED);
+    background: linear-gradient(#F1F3F3, #582d52);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;

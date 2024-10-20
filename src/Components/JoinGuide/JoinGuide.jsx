@@ -31,7 +31,7 @@ function JoinGuide() {
       <Row className="process-row">
         <h1><b>Step - 1</b></h1>
         <p className="para-process">
-          🌟 Ready to kickstart your journey with us? Join our vibrant WhatsApp
+          Ready to kickstart your journey with us? Join our vibrant WhatsApp
           community for instant updates and connections! 📱{" "}
         </p>
         <div className="more-padding">
