@@ -32,18 +32,14 @@ function TeamSection() {
     <Container className='team-section'>
       <SectionHeader header="Our Team"  scrollPosition={scrollPosition} />
       <Row className='members-row-one'>
-        <Col lg="5">
+        <Col lg="3" className='left-member'>
             <TeamCard 
             quote="Take the first step today <br /> In the stairs to Reach the Cloud" 
             image={img} title="Syed Omer Shah" 
             designation="AWS Cloud Club Captain"
             connect="https://www.linkedin.com/in/syed-omer-shah/" />
         </Col>
-      </Row>
-
-
-      <Row className='members-row-two'>
-        <Col lg="3" className='left-member' >
+        <Col lg="3" className='right-member' >
             <TeamCard 
             quote="The infrastructure of the future is being built by technology, with the architect, AWS cloud." 
             image={img} title="Danish Mohiuddin"  
@@ -56,17 +52,16 @@ function TeamSection() {
             designation="Secretary"
             connect="https://www.linkedin.com/in/maria-ashfaq-2aa240229/"/>
         </Col>
-
-        <Col lg="3" className='right-member' >
+      </Row>
+        
+      <Row className='members-row-two'>
+        <Col lg="3" className='left-member' >
             <TeamCard quote="Just keep on increasing your FullStack. At one point, you will Reach the Cloud" 
             image={img} 
             title="Shaik Ehsan" 
             designation="Chief Coordinator"
             connect="https://www.linkedin.com/in/shaik-ehsan-166b67273/"/>
         </Col>
-        </Row>
-        <Row className='members-row-three'>
-
         <Col lg="3"  className='right-member'>
             <TeamCard quote="Cloud connects servers, while a Community connects people. <br />" 
             image={img} title="Unaisah Noor" 
@@ -79,7 +74,10 @@ function TeamSection() {
             designation="Outreach Director"
             connect="https://www.linkedin.com/in/zayab-ahmed-a56529241/"/>
         </Col>
-        <Col lg="3"  className='right-member'>
+      </Row>
+      
+      <Row className='members-row-three'>
+        <Col lg="3"  className='left-member'>
             <TeamCard quote="Cloud connects servers, while a Community connects people. <br />" 
             image={img} title="Nameera Mohammed" 
             designation="Technical Coordinator"
@@ -91,7 +89,6 @@ function TeamSection() {
             designation="Treasurer"
             connect="https://www.linkedin.com/in/syedazoya018/"/>
         </Col>
-
       </Row>
 
     </Container>
