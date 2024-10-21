@@ -11,6 +11,7 @@ import "./TeamSection.css"
 // import omer_shah from "../../assets/img/team/sakkthi.jpg"
 // import Rishab from "../../assets/img/team/rishab2.jpg"
 import img from "../../assets/img/profile.jpg";
+import teamimg from "../../assets/img/team/team.jpg";
 import TeamCard from '../TeamCard/TeamCard';
 
 function TeamSection() {
@@ -30,7 +31,11 @@ function TeamSection() {
 
   return (
     <Container className='team-section'>
+
       <SectionHeader header="Our Team"  scrollPosition={scrollPosition} />
+      {/* <div className="team-image-container">
+      <img src={teamimg} alt="Our Team" className="team-image" />
+    </div> */}
       <Row className='members-row-one'>
         <Col lg="3" className='left-member'>
             <TeamCard 

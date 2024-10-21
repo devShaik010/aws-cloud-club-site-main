@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import NavBar from "../Components/NavBar/NavBar";
 import Hero from "../Components/Hero/Hero";
 import Benefits from "../Components/Benefits/Benefits";
@@ -9,17 +10,30 @@ import Loader from "../Components/Loader/Loader";
 
 function Home() {
   const [loading, setLoading] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
-    const loadingTimeout = setTimeout(() => {
+    // Check local storage to see if the loader has been shown
+    const hasLoaded = localStorage.getItem("hasLoaded");
+
+    if (!hasLoaded) {
+      // If not loaded, show loader and set a timeout
+      const loadingTimeout = setTimeout(() => {
+        setLoading(false);
+        localStorage.setItem("hasLoaded", "true"); // Mark as loaded
+      }, 3500);
+
+      return () => clearTimeout(loadingTimeout);
+    } else {
+      // If already loaded, skip the loader
       setLoading(false);
-    }, 3500);
-    return () => clearTimeout(loadingTimeout);
+    }
   }, []);
 
   useEffect(() => {
+    // Scroll to top on navigation
     window.scrollTo(0, 0);
-  }, []);
+  }, [location]);
 
   return (
     <div>

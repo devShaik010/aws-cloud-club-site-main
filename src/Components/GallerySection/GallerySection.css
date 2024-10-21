@@ -1,7 +1,6 @@
-@import "~react-image-gallery/styles/css/image-gallery.css";
+/* @import "~react-image-gallery/styles/css/image-gallery.css"; */
 
 .gallery-section {
-    background: linear-gradient(-60deg, rgba(15, 20, 30, 1) 16%, rgba(30, 0, 60, 1) 50%, rgb(1, 4, 10) 84%);
     min-height: 100vh;
     padding: 80px 60px 0 60px;
     padding-bottom: 30px;

@@ -28,6 +28,9 @@ function About() {
     <Container id='About' fluid className='about-section'>
       <SectionHeader header = "About Us"  scrollPosition={scrollPosition}/>
       <Row className="section-row">
+      <Col lg={6} className="section-content">
+          <img src={ team } alt="About Us" className='about-img' />
+        </Col>
         <Col lg={6} className="section-content">
             <h2 className='side-head'>Who we are?</h2>
             <p className='para'>
@@ -44,9 +47,7 @@ function About() {
 </p>
 
         </Col>
-        <Col lg={6} className="section-content">
-          <img src={ team } alt="About Us" className='about-img' />
-        </Col>
+        
       </Row>
     </Container>
   );

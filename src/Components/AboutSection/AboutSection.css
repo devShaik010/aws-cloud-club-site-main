@@ -1,27 +1,50 @@
-/* AboutSection.css */
-
-.about-section{
-    
+.about-section {
     min-height: 100vh;
-    padding: 80px 60px 0 60px;
-    
+    padding: 80px 60px 0 60px; /* Top, right, bottom, left padding */
+    display: flex; /* Use flexbox for better alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: flex-start; /* Align items to the top */
 }
 
-.section-content{
+.section-content {
     color: #fff;
+    max-width: 800px; /* Limit the width for readability */
+    text-align: center; /* Center text for better aesthetics */
 }
 
+/* Image styling */
+.about-img {
+    width: 100%;
+    max-width: 600px; /* Limit maximum width of images */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for depth */
+}
 
 /* Media query for smartphones */
 @media (max-width: 576px) {
     .about-section {
-        padding: 80px 15px 30px 15px;
+        padding: 80px 15px 30px 15px; /* Adjust padding for smaller screens */
     }
-    
-  }
 
-.about-img {
-    width:  100%;
-    margin-top: 20px;
-    border-radius: 15px;
+    .section-content {
+        padding: 0 15px; /* Add padding for small screens */
+    }
+
+    .about-img {
+        margin-top: 15px; /* Adjust margin for smaller screens */
+    }
+}
+
+/* Media query for tablets */
+@media (min-width: 577px) and (max-width: 768px) {
+    .about-section {
+        padding: 80px 30px 30px 30px; /* Adjust padding for medium screens */
+    }
+
+    .about-img {
+        margin-top: 20px; /* Keep margin consistent on tablets */
+    }
 }

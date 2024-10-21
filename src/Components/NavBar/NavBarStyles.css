@@ -108,7 +108,7 @@
 
 .active-link {
     font-weight: 700; /* Make the active link bold */
-    color: #FFFFFF; /* Change the color for the active link */
+    color: #b95287; /* Change the color for the active link */
 }
 
 .hamburger {
@@ -120,33 +120,53 @@
     .navbar-menu {
         flex-direction: column;
         justify-content: center;
-        align-items: center;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: black;
         position: absolute;
         top: 0;
-        left: -100%;
-        transition: left 0.3s;
+        right: -100%;
+        /* transition: right 0.4s; */
         text-align: center;
         margin: 0;
         padding: 0;
-        border: 0px;
-        border-radius: none;
+        border-radius: 0px;
+        border: 0.1px;
+    }
+    
+    .navbar-menu.active {
+        right: 0; /* Slide in when active */
     }
 
-    .navbar-menu.active {
-        left: 0;
+    .navbar-menu li {
+        list-style: none; 
+        text-align: left;
+ 
     }
 
     .navbar-menu li a {
-        font-size: 2rem;
+       font-size: medium;
+        color: #F1F3F3; 
+        text-decoration: none; 
+        display: block; 
+   
     }
 
     .hamburger {
-        display: block;
-        padding-right: 1rem;
-        font-size: 20px; /* Increased font size for better visibility */
-        color: #F1F3F3;
+        display: block; /* Show hamburger on small screens */
+       /* Space on the right */
+       padding: 0px 10px;
+        font-size: 20px; /* Increased font size for visibility */
+        color: #F1F3F3; /* Hamburger color */
+        border: 1px solid white; /* Border around hamburger */
+        border-radius: 5px; /* Optional: rounded corners */
+        background: transparent; /* Transparent background */
+        cursor: pointer; /* Cursor change on hover */
+        text-align: center; /* Center text in hamburger */
+        margin: 0 auto; /* Center the hamburger */
+    }
+
+    .hamburger:hover {
+        background-color: rgba(255, 255, 255, 0.1); /* Hover effect */
     }
 }

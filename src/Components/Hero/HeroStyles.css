@@ -1,16 +1,13 @@
 .badg {
   background-color: rgba(0, 0, 0, 0.289);
   backdrop-filter: blur(10px);
-  padding-right: 8px;
-  padding-left: 8px;
-  padding-top:5px ;
-  padding-bottom:5px ;
+  padding: 5px 8px;
   border-radius: 30px;
   font-size: small;
   text-align: center;
   display: inline-flex; 
   line-height: center;
-  margin-bottom: -10px;/* Ensure the badge fits its content */
+  margin-bottom: 10px; /* Adjusted for spacing */
 }
 
 .new {
@@ -21,7 +18,6 @@
   font-weight: bolder;
   margin-right: 10px;
   font-size: x-small;
-  text-align: center;
 }
 
 h4 {
@@ -37,7 +33,7 @@ h4 {
   font-size: 2.5rem;
   color: rgba(233, 229, 250, 0.9);
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px; /* Reduced margin */
 }
 
 .aws-border {
@@ -52,7 +48,7 @@ h4 {
   margin-top: 3rem;
   width: 100%;
   height: 100vh;
-  background-image: url("/src/assets/img/background.jpeg");
+  background-image: url("/src/assets/img/background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -94,6 +90,12 @@ h1 {
 
 .hero-content {
   text-align: center;
+}
+
+.badge-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Adjusted for better spacing */
 }
 
 .clouds-container {
@@ -170,6 +172,23 @@ h1 {
 
   .hero-btn {
     display: none;
+  }
+
+  .badge-container {
+    flex-direction: column; /* Stack badge and text */
+    align-items: center; /* Center align for mobile */
+  }
+
+  .badg {
+     position: absolute;
+     margin-top:  -80%;
+     border: 0.1px solid white;
+     background-color: rgba(164, 163, 163, 0.267);
+     backdrop-filter: blur(10px);
+     font-size: x-small;
+  }
+  .new{
+      font-size: 7px;
   }
 }
 

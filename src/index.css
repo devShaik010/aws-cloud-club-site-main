@@ -5,7 +5,7 @@ body, #root {
   scroll-behavior: smooth; /* Smooth scrolling behavior */
   overflow-x: hidden; /* Prevent horizontal overflow */
   font-family: "Montserrat", sans-serif; /* Apply Montserrat font */
-  background: linear-gradient(45deg, #000000 16%, #23162f 30%, #21162c 84%, black); /* Gradient background */
+  background: linear-gradient(45deg, #000000 16%, #23162f 30%, #21162c 84%, black); 
   /* Uncomment the line below to use a custom cursor */
   /* cursor: url('.././src/assets/img/cr.jpg'), auto; */
 }

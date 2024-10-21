@@ -1,0 +1,20 @@
+.typing-animation {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: rgba(233, 229, 250, 0.9);
+    text-align: center;
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflow */
+    border-right: 0.15em solid rgba(233, 229, 250, 0.9); /* Cursor effect */
+    animation: blink-caret 0.75s step-end infinite; /* Blinking cursor */
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgba(233, 229, 250, 0.9);
+    }
+  }
+  

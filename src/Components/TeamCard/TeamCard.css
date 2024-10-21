@@ -1,115 +1,84 @@
 .team-card {
-    background: rgb(138,135,139);
-    background: linear-gradient(0deg, rgba(138,135,139,1) 0%, rgba(88,45,82,1) 85%);
-    border-radius:30px;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    padding: 10px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Add box-shadow for elevation */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 99;
-    width: 100%;
-    min-height: 455px;
-}
-
-
-
-.team-card-title{
-    font-size: 28px;
-    font-weight: 600;
-    font-style: normal;
-    /* background: linear-gradient(#F1F3F3, #582d52); */
-    background-clip: text;
-    -webkit-background-clip: text;
-    color:#9e9d9e;
-    text-align: center;
-    margin-bottom: 10px;
-    /* font-family: "Raleway", sans-serif; */
-}
-  
-.card-text{
-    color: #8a878b;
-    text-align: justify;
-    font-size: 16px;
-    font-weight: 400;
-    font-family: "Raleway", sans-serif;
-}
-
-
-.card-image{
-    height:200px;
-    width: 200px;
-    
-    border-radius: 15px;
-    margin-bottom: 15px;
-}
-
-.team-card-body{
+    background: linear-gradient(145deg, rgba(138, 135, 139, 0.8), rgba(88, 45, 82, 0.8));
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    padding: 15px; /* Reduced padding */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    z-index: 1;
+    margin: 10px; /* Reduced spacing between cards */
+    max-width: 250px; /* Set a max-width for the cards */
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card-image {
+    height: 150px; /* Reduced size */
+    width: 150px; /* Reduced size */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px; /* Reduced bottom margin */
+    border: 4px solid #fff;
+}
+
+.team-card-title {
+    font-size: 20px; /* Adjusted size */
+    font-weight: 600;
+    color: #f5f5f5;
+    text-align: center;
+    margin: 5px 0; /* Reduced margin */
 }
 
 .designation {
-    font-size: 16px;
-    font-weight: 450;
-    color:#9e9d9e;
+    font-size: 14px; /* Adjusted size */
+    font-weight: 400;
+    color: #d1cfcf;
+    margin-bottom: 10px; /* Reduced margin */
 }
-
-.quote {
-    font-size: 160px;
-    margin-top: -40px;
-    margin-bottom: -100px;
-  }
-  
-  .quote-text {
-    font-size: 17px;
-    text-align: center;
-    color: #fff;
-    font-weight: 450;
-  }
-
 
 .connect-btn {
-    margin-top: 20px;
-    background: #61385b;
+    margin-top: 10px; /* Reduced margin */
+    background: #1100ff92;
     border-radius: 15px;
-    
     font-weight: 500;
-    font-size: 18px;
-    padding: 10px 36px;
+    font-size: 14px; /* Adjusted size */
+    padding: 6px 20px; /* Adjusted padding */
     color: #fff;
     text-decoration: none;
+    transition: background 0.3s;
 }
 
-
 .connect-btn:hover {
-    background: #52224a;
+    background: #ffffff;
+    color: black;
 }
 
 @media (max-width: 576px) {
     .team-card {
-        padding: 15px;
+        padding: 10px; /* Further reduced for mobile */
     }
 
-    .quote {
-        font-size: 180px;
-        margin-top: -40px;
-        margin-bottom: -120px;
-      }
-
-      .quote-text {
-        font-size: 16px;
-        text-align: center;
-        font-weight: 400;
-      }
-
-      .team-card-title{
-        font-size: 32px;
-        font-weight: 600;
+    .team-card-title {
+        font-size: 18px; /* Adjusted title size */
     }
-    
-  }
+
+    .card-image {
+        height: 120px; /* Adjusted for mobile */
+        width: 120px; /* Adjusted for mobile */
+    }
+
+    .designation {
+        font-size: 12px; /* Adjusted for mobile */
+    }
+
+    .connect-btn {
+        font-size: 12px; /* Adjusted for mobile */
+        padding: 4px 16px; /* Adjusted for mobile */
+    }
+}
