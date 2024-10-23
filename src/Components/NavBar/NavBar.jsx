@@ -37,9 +37,10 @@ function NavBar() {
                 </ul>
             </div>
 
-            <button className="join-now" onClick={() => alert('Join Now Clicked!')}>
-                Join Now
-            </button>
+            <button className="join-now" onClick={() => window.open('https://www.meetup.com/aws-cloud-club-at-mjcet/', '_blank')}>
+    Join Now
+</button>
+
 
             <div className="hamburger" onClick={handleClick}>
                 {click ? (
