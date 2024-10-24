@@ -19,7 +19,10 @@ const EventCard = () => {
           <p>To Register for the Datathon, Click Below</p>
         </div>
         <div className="card-register">
-          <button className="register-button">Register</button>
+        <button className="register-button" onClick={() => window.open('https://datanyx.in/', '_blank')}>
+    Register
+</button>
+
         </div>
       </div>
     </div>
