@@ -34,6 +34,9 @@ function Hero() {
             <span className="aws-border">AWS </span> Cloud Club
           </h2>
           <h4>Be a part of the cloud revolution now</h4>
+          <center>
+            <a href="https://forms.gle/uDpTpZ8JHdZvB7Fn7" target="_blank" className="btn-join">Join as Member</a>
+          </center>
         </Col>
       </Row>
     </Container>
